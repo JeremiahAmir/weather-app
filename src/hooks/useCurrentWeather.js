@@ -12,7 +12,6 @@ const useCurrentWeather = (city) => {
     const json = await data.json();
     dispatch(setCurrWeather(json?.current));
     dispatch(setLocation(json?.location));
-    console.log(json);
   };
   useEffect(() => {
     getCurrentWeather();
